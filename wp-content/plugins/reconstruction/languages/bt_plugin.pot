@@ -1,0 +1,1056 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR BoldThemes
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-27 01:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: reconstruction.php:1935
+msgid "VIEW PROJECT"
+msgstr ""
+
+#: reconstruction.php:2040
+msgid "Category filter:"
+msgstr ""
+
+#: reconstruction.php:2041
+msgid "All"
+msgstr ""
+
+#: reconstruction.php:2050
+msgid "no more posts"
+msgstr ""
+
+#: reconstruction.php:2204 reconstruction.php:2297
+msgid "Total"
+msgstr ""
+
+#: reconstruction.php:2209 reconstruction.php:2300 reconstruction.php:2867
+#: reconstruction.php:3150
+msgid "Name"
+msgstr ""
+
+#: reconstruction.php:2210 reconstruction.php:2301
+msgid "Email"
+msgstr ""
+
+#: reconstruction.php:2211 reconstruction.php:2302
+msgid "Phone"
+msgstr ""
+
+#: reconstruction.php:2212 reconstruction.php:2303
+msgid "Address"
+msgstr ""
+
+#: reconstruction.php:2213
+msgid "Service Date"
+msgstr ""
+
+#: reconstruction.php:2214
+msgid "Service Time"
+msgstr ""
+
+#: reconstruction.php:2215 reconstruction.php:2314
+msgid "Message"
+msgstr ""
+
+#: reconstruction.php:2304
+msgid "Preferred Service Date"
+msgstr ""
+
+#: reconstruction.php:2306
+msgid "Preferred Service Time"
+msgstr ""
+
+#: reconstruction.php:2315
+msgid "Submit"
+msgstr ""
+
+#: reconstruction.php:2472
+msgid "Please fill out all required fields."
+msgstr ""
+
+#: reconstruction.php:2530
+msgid "Please wait..."
+msgstr ""
+
+#: reconstruction.php:2539
+msgid "Thank you, we will contact you soon!"
+msgstr ""
+
+#: reconstruction.php:2541 reconstruction.php:2545
+msgid "Error! Please try again later."
+msgstr ""
+
+#: reconstruction.php:2582
+msgid "Select..."
+msgstr ""
+
+#: reconstruction.php:2715 reconstruction.php:2717 reconstruction.php:2865
+#: reconstruction.php:2934 reconstruction.php:3003
+msgid "Image"
+msgstr ""
+
+#: reconstruction.php:2715
+msgid "Single image"
+msgstr ""
+
+#: reconstruction.php:2718
+msgid "Caption text"
+msgstr ""
+
+#: reconstruction.php:2719
+msgid "Size (e.g. thumbnail, medium, large, full)"
+msgstr ""
+
+#: reconstruction.php:2720 reconstruction.php:2903 reconstruction.php:2935
+#: reconstruction.php:2943 reconstruction.php:3047
+msgid "URL"
+msgstr ""
+
+#: reconstruction.php:2721 reconstruction.php:2771 reconstruction.php:2778
+#: reconstruction.php:2830 reconstruction.php:2854 reconstruction.php:2906
+#: reconstruction.php:2917 reconstruction.php:2968 reconstruction.php:2996
+#: reconstruction.php:3004 reconstruction.php:3032 reconstruction.php:3053
+#: reconstruction.php:3072 reconstruction.php:3114 reconstruction.php:3143
+#: reconstruction.php:3175
+msgid "Extra Class Name(s)"
+msgstr ""
+
+#: reconstruction.php:2722 reconstruction.php:2772 reconstruction.php:2779
+#: reconstruction.php:2831 reconstruction.php:2855 reconstruction.php:2907
+#: reconstruction.php:2918 reconstruction.php:2969 reconstruction.php:2997
+#: reconstruction.php:3005 reconstruction.php:3033 reconstruction.php:3054
+#: reconstruction.php:3073 reconstruction.php:3115 reconstruction.php:3144
+#: reconstruction.php:3176
+msgid "Inline Style"
+msgstr ""
+
+#: reconstruction.php:2726
+msgid "Section"
+msgstr ""
+
+#: reconstruction.php:2726
+msgid "Basic root element"
+msgstr ""
+
+#: reconstruction.php:2728
+msgid "Layout"
+msgstr ""
+
+#: reconstruction.php:2730
+msgid "Boxed"
+msgstr ""
+
+#: reconstruction.php:2731
+msgid "Wide"
+msgstr ""
+
+#: reconstruction.php:2733 reconstruction.php:3011
+msgid "Top spaced"
+msgstr ""
+
+#: reconstruction.php:2735 reconstruction.php:2743 reconstruction.php:2757
+#: reconstruction.php:2762 reconstruction.php:2825 reconstruction.php:2849
+#: reconstruction.php:2946 reconstruction.php:3013 reconstruction.php:3021
+#: reconstruction.php:3029 reconstruction.php:3090 reconstruction.php:3101
+#: reconstruction.php:3111
+msgid "No"
+msgstr ""
+
+#: reconstruction.php:2736 reconstruction.php:2744 reconstruction.php:3014
+#: reconstruction.php:3022
+msgid "Small-Spaced"
+msgstr ""
+
+#: reconstruction.php:2737 reconstruction.php:2745 reconstruction.php:3015
+#: reconstruction.php:3023
+msgid "Semi-Spaced"
+msgstr ""
+
+#: reconstruction.php:2738 reconstruction.php:2746 reconstruction.php:3016
+#: reconstruction.php:3024
+msgid "Spaced"
+msgstr ""
+
+#: reconstruction.php:2739 reconstruction.php:2747 reconstruction.php:3017
+#: reconstruction.php:3025
+msgid "Extra-Spaced"
+msgstr ""
+
+#: reconstruction.php:2741 reconstruction.php:3019
+msgid "Bottom spaced"
+msgstr ""
+
+#: reconstruction.php:2749
+msgid "Skin"
+msgstr ""
+
+#: reconstruction.php:2751 reconstruction.php:2793
+msgid "Inherit"
+msgstr ""
+
+#: reconstruction.php:2752 reconstruction.php:2954
+msgid "Dark"
+msgstr ""
+
+#: reconstruction.php:2753
+msgid "Light"
+msgstr ""
+
+#: reconstruction.php:2755
+msgid "Full Screen"
+msgstr ""
+
+#: reconstruction.php:2758 reconstruction.php:2763 reconstruction.php:2826
+#: reconstruction.php:3030 reconstruction.php:3091 reconstruction.php:3102
+#: reconstruction.php:3112
+msgid "Yes"
+msgstr ""
+
+#: reconstruction.php:2760
+msgid "Divider"
+msgstr ""
+
+#: reconstruction.php:2765
+msgid "Background Image"
+msgstr ""
+
+#: reconstruction.php:2766
+msgid "YouTube Background Video"
+msgstr ""
+
+#: reconstruction.php:2767
+msgid "Video Settings (e.g. startAt:20, mute:true, stopMovieOnBlur:false)"
+msgstr ""
+
+#: reconstruction.php:2768
+msgid "Parallax (e.g. -.7)"
+msgstr ""
+
+#: reconstruction.php:2769
+msgid "Parallax Offset in px (e.g. -100)"
+msgstr ""
+
+#: reconstruction.php:2770
+msgid "Custom Id Attribute"
+msgstr ""
+
+#: reconstruction.php:2776
+msgid "Row"
+msgstr ""
+
+#: reconstruction.php:2776
+msgid "Row element"
+msgstr ""
+
+#: reconstruction.php:2783
+msgid "Column"
+msgstr ""
+
+#: reconstruction.php:2783
+msgid "Column element"
+msgstr ""
+
+#: reconstruction.php:2785
+msgid "Align"
+msgstr ""
+
+#: reconstruction.php:2787 reconstruction.php:2801
+msgid "Left"
+msgstr ""
+
+#: reconstruction.php:2788 reconstruction.php:2802
+msgid "Right"
+msgstr ""
+
+#: reconstruction.php:2789
+msgid "Center"
+msgstr ""
+
+#: reconstruction.php:2791
+msgid "Vertical Align"
+msgstr ""
+
+#: reconstruction.php:2794 reconstruction.php:2850 reconstruction.php:2950
+msgid "Top"
+msgstr ""
+
+#: reconstruction.php:2795
+msgid "Middle"
+msgstr ""
+
+#: reconstruction.php:2796 reconstruction.php:2851
+msgid "Bottom"
+msgstr ""
+
+#: reconstruction.php:2798 reconstruction.php:3027
+msgid "Border"
+msgstr ""
+
+#: reconstruction.php:2800
+msgid "No Border"
+msgstr ""
+
+#: reconstruction.php:2804
+msgid "Padding"
+msgstr ""
+
+#: reconstruction.php:2806 reconstruction.php:2898 reconstruction.php:3042
+msgid "Default"
+msgstr ""
+
+#: reconstruction.php:2807
+msgid "No padding"
+msgstr ""
+
+#: reconstruction.php:2808
+msgid "Double padding"
+msgstr ""
+
+#: reconstruction.php:2810
+msgid "Animation"
+msgstr ""
+
+#: reconstruction.php:2812
+msgid "No Animation"
+msgstr ""
+
+#: reconstruction.php:2813
+msgid "Fade In"
+msgstr ""
+
+#: reconstruction.php:2814
+msgid "Move Up"
+msgstr ""
+
+#: reconstruction.php:2815
+msgid "Move Left"
+msgstr ""
+
+#: reconstruction.php:2816
+msgid "Move Right"
+msgstr ""
+
+#: reconstruction.php:2817
+msgid "Move Down"
+msgstr ""
+
+#: reconstruction.php:2818
+msgid "Fade In / Move Up"
+msgstr ""
+
+#: reconstruction.php:2819
+msgid "Fade In / Move Left"
+msgstr ""
+
+#: reconstruction.php:2820
+msgid "Fade In / Move Right"
+msgstr ""
+
+#: reconstruction.php:2821
+msgid "Fade In / Move Down"
+msgstr ""
+
+#: reconstruction.php:2823
+msgid "Text indent"
+msgstr ""
+
+#: reconstruction.php:2828
+msgid "Background color"
+msgstr ""
+
+#: reconstruction.php:2829
+msgid "Transparent (e.g. 0.4)"
+msgstr ""
+
+#: reconstruction.php:2835 reconstruction.php:2866 reconstruction.php:2905
+#: reconstruction.php:2941 reconstruction.php:2981 reconstruction.php:3153
+msgid "Text"
+msgstr ""
+
+#: reconstruction.php:2835
+msgid "Text element"
+msgstr ""
+
+#: reconstruction.php:2837
+msgid "Header"
+msgstr ""
+
+#: reconstruction.php:2837
+msgid "Header element"
+msgstr ""
+
+#: reconstruction.php:2839
+msgid "Superheadline"
+msgstr ""
+
+#: reconstruction.php:2840 reconstruction.php:2864 reconstruction.php:2876
+#: reconstruction.php:2883 reconstruction.php:2904
+msgid "Headline"
+msgstr ""
+
+#: reconstruction.php:2841
+msgid "Headline Size"
+msgstr ""
+
+#: reconstruction.php:2843 reconstruction.php:2961 reconstruction.php:2991
+msgid "Small"
+msgstr ""
+
+#: reconstruction.php:2844 reconstruction.php:2992
+msgid "Medium"
+msgstr ""
+
+#: reconstruction.php:2845 reconstruction.php:2960
+msgid "Big"
+msgstr ""
+
+#: reconstruction.php:2847
+msgid "Dash"
+msgstr ""
+
+#: reconstruction.php:2853
+msgid "Subheadline"
+msgstr ""
+
+#: reconstruction.php:2859
+msgid "Testimonials"
+msgstr ""
+
+#: reconstruction.php:2859
+msgid "Testimonials container"
+msgstr ""
+
+#: reconstruction.php:2862
+msgid "Testimonial Item"
+msgstr ""
+
+#: reconstruction.php:2862
+msgid "Single testimonial item"
+msgstr ""
+
+#: reconstruction.php:2868
+msgid "Job"
+msgstr ""
+
+#: reconstruction.php:2873
+msgid "Tabs"
+msgstr ""
+
+#: reconstruction.php:2873
+msgid "Tabs container"
+msgstr ""
+
+#: reconstruction.php:2875
+msgid "Tab Item"
+msgstr ""
+
+#: reconstruction.php:2875
+msgid "Tabs items"
+msgstr ""
+
+#: reconstruction.php:2880
+msgid "Accordion"
+msgstr ""
+
+#: reconstruction.php:2880
+msgid "Accordion container"
+msgstr ""
+
+#: reconstruction.php:2882
+msgid "Accordion Item"
+msgstr ""
+
+#: reconstruction.php:2882
+msgid "Single accordion element"
+msgstr ""
+
+#: reconstruction.php:2893
+msgid "Service"
+msgstr ""
+
+#: reconstruction.php:2893
+msgid "Service element"
+msgstr ""
+
+#: reconstruction.php:2895 reconstruction.php:2942 reconstruction.php:3037
+#: reconstruction.php:3039
+msgid "Icon"
+msgstr ""
+
+#: reconstruction.php:2896 reconstruction.php:3040
+msgid "Icon Type"
+msgstr ""
+
+#: reconstruction.php:2899 reconstruction.php:2956 reconstruction.php:3043
+msgid "Accent"
+msgstr ""
+
+#: reconstruction.php:2900 reconstruction.php:3044
+msgid "Borderless"
+msgstr ""
+
+#: reconstruction.php:2901 reconstruction.php:3045
+msgid "White"
+msgstr ""
+
+#: reconstruction.php:2911
+msgid "Google Maps"
+msgstr ""
+
+#: reconstruction.php:2911
+msgid "Google Maps with marker on specified coordinates"
+msgstr ""
+
+#: reconstruction.php:2913
+msgid "Latitude"
+msgstr ""
+
+#: reconstruction.php:2914
+msgid "Longitude"
+msgstr ""
+
+#: reconstruction.php:2915
+msgid "Zoom (e.g. 14)"
+msgstr ""
+
+#: reconstruction.php:2916
+msgid "Height (e.g. 250px)"
+msgstr ""
+
+#: reconstruction.php:2922
+msgid "Clients"
+msgstr ""
+
+#: reconstruction.php:2922
+msgid "Client container"
+msgstr ""
+
+#: reconstruction.php:2924
+msgid "Type"
+msgstr ""
+
+#: reconstruction.php:2926 reconstruction.php:2986 reconstruction.php:3155
+msgid "Slider"
+msgstr ""
+
+#: reconstruction.php:2927
+msgid "Regular"
+msgstr ""
+
+#: reconstruction.php:2932
+msgid "Client"
+msgstr ""
+
+#: reconstruction.php:2932
+msgid "Individual client element"
+msgstr ""
+
+#: reconstruction.php:2939
+msgid "Button"
+msgstr ""
+
+#: reconstruction.php:2939
+msgid "Button with custom link"
+msgstr ""
+
+#: reconstruction.php:2944
+msgid "Target window"
+msgstr ""
+
+#: reconstruction.php:2947
+msgid "Self"
+msgstr ""
+
+#: reconstruction.php:2948
+msgid "Blank"
+msgstr ""
+
+#: reconstruction.php:2949
+msgid "Parent"
+msgstr ""
+
+#: reconstruction.php:2952
+msgid "Style"
+msgstr ""
+
+#: reconstruction.php:2955
+msgid "Gray"
+msgstr ""
+
+#: reconstruction.php:2958
+msgid "Size"
+msgstr ""
+
+#: reconstruction.php:2963
+msgid "Width"
+msgstr ""
+
+#: reconstruction.php:2965
+msgid "Normal"
+msgstr ""
+
+#: reconstruction.php:2966
+msgid "Full"
+msgstr ""
+
+#: reconstruction.php:2973
+msgid "Counter"
+msgstr ""
+
+#: reconstruction.php:2973
+msgid "Animated counter"
+msgstr ""
+
+#: reconstruction.php:2975
+msgid "Number"
+msgstr ""
+
+#: reconstruction.php:2979
+msgid "Percentage bar"
+msgstr ""
+
+#: reconstruction.php:2979
+msgid "Animated percentage bar"
+msgstr ""
+
+#: reconstruction.php:2982
+msgid "Percentage"
+msgstr ""
+
+#: reconstruction.php:2986
+msgid "Slider container"
+msgstr ""
+
+#: reconstruction.php:2988
+msgid "Slider height"
+msgstr ""
+
+#: reconstruction.php:2990
+msgid "Auto"
+msgstr ""
+
+#: reconstruction.php:2993
+msgid "Large"
+msgstr ""
+
+#: reconstruction.php:2995
+msgid "Auto Play Speed (e.g. 3000)"
+msgstr ""
+
+#: reconstruction.php:3001
+msgid "Slider Item"
+msgstr ""
+
+#: reconstruction.php:3001
+msgid "Individual slide element"
+msgstr ""
+
+#: reconstruction.php:3009
+msgid "Separator"
+msgstr ""
+
+#: reconstruction.php:3009
+msgid "Horizontal separator"
+msgstr ""
+
+#: reconstruction.php:3037
+msgid "Single icon with link"
+msgstr ""
+
+#: reconstruction.php:3051
+msgid "Icons"
+msgstr ""
+
+#: reconstruction.php:3051
+msgid "Icon container"
+msgstr ""
+
+#: reconstruction.php:3058
+msgid "Latest Posts"
+msgstr ""
+
+#: reconstruction.php:3058
+msgid "Recent posts"
+msgstr ""
+
+#: reconstruction.php:3060
+msgid "Number of Items"
+msgstr ""
+
+#: reconstruction.php:3061 reconstruction.php:3087
+msgid "Category Slug"
+msgstr ""
+
+#: reconstruction.php:3062
+msgid "Format"
+msgstr ""
+
+#: reconstruction.php:3064
+msgid "Horizontal"
+msgstr ""
+
+#: reconstruction.php:3065
+msgid "Vertical"
+msgstr ""
+
+#: reconstruction.php:3067 reconstruction.php:3104
+msgid "Post Type"
+msgstr ""
+
+#: reconstruction.php:3069 reconstruction.php:3106
+msgid "Blog"
+msgstr ""
+
+#: reconstruction.php:3070 reconstruction.php:3107 reconstruction.php:3820
+msgid "Portfolio"
+msgstr ""
+
+#: reconstruction.php:3077
+msgid "Grid"
+msgstr ""
+
+#: reconstruction.php:3077
+msgid "Grid with recent posts"
+msgstr ""
+
+#: reconstruction.php:3079
+msgid "Number of items"
+msgstr ""
+
+#: reconstruction.php:3080
+msgid "Columns"
+msgstr ""
+
+#: reconstruction.php:3082
+msgid "3"
+msgstr ""
+
+#: reconstruction.php:3083
+msgid "4"
+msgstr ""
+
+#: reconstruction.php:3084
+msgid "5"
+msgstr ""
+
+#: reconstruction.php:3085
+msgid "6"
+msgstr ""
+
+#: reconstruction.php:3088
+msgid "Category Filter"
+msgstr ""
+
+#: reconstruction.php:3093
+msgid "Grid Type"
+msgstr ""
+
+#: reconstruction.php:3095
+msgid "Classic"
+msgstr ""
+
+#: reconstruction.php:3096
+msgid "Tiled"
+msgstr ""
+
+#: reconstruction.php:3098
+msgid "Tiled Format"
+msgstr ""
+
+#: reconstruction.php:3099
+msgid "Always Show Content in Tiled Grid"
+msgstr ""
+
+#: reconstruction.php:3109
+msgid "Scroll Loading"
+msgstr ""
+
+#: reconstruction.php:3125
+msgid "Quote and Booking"
+msgstr ""
+
+#: reconstruction.php:3125
+msgid "Quote and booking container"
+msgstr ""
+
+#: reconstruction.php:3127
+msgid "Admin Email"
+msgstr ""
+
+#: reconstruction.php:3128
+msgid "Email Subject"
+msgstr ""
+
+#: reconstruction.php:3129
+msgid "Preferred Time Start"
+msgstr ""
+
+#: reconstruction.php:3132
+msgid "Preferred Time End"
+msgstr ""
+
+#: reconstruction.php:3135 reconstruction.php:3170
+msgid "Currency"
+msgstr ""
+
+#: reconstruction.php:3136
+msgid "Mandatory Name"
+msgstr ""
+
+#: reconstruction.php:3137
+msgid "Mandatory Email"
+msgstr ""
+
+#: reconstruction.php:3138
+msgid "Mandatory Phone"
+msgstr ""
+
+#: reconstruction.php:3139
+msgid "Mandatory Address"
+msgstr ""
+
+#: reconstruction.php:3140
+msgid "Mandatory Preferred Date"
+msgstr ""
+
+#: reconstruction.php:3141
+msgid "Mandatory Preferred Time"
+msgstr ""
+
+#: reconstruction.php:3142
+msgid "Mandatory Message"
+msgstr ""
+
+#: reconstruction.php:3148
+msgid "Quote Item"
+msgstr ""
+
+#: reconstruction.php:3148
+msgid "Single quote element"
+msgstr ""
+
+#: reconstruction.php:3151
+msgid "Input Type"
+msgstr ""
+
+#: reconstruction.php:3154
+msgid "Select"
+msgstr ""
+
+#: reconstruction.php:3157
+msgid ""
+"Value (unit_price for Text, name;price separated by new line for Select, min;"
+"max;step;unit_price;offset_price for Slider)"
+msgstr ""
+
+#: reconstruction.php:3161
+msgid "Quote Multiply"
+msgstr ""
+
+#: reconstruction.php:3161
+msgid "Quote multiply container"
+msgstr ""
+
+#: reconstruction.php:3166
+msgid "Price List"
+msgstr ""
+
+#: reconstruction.php:3166
+msgid "Price List element"
+msgstr ""
+
+#: reconstruction.php:3168
+msgid "Title"
+msgstr ""
+
+#: reconstruction.php:3169
+msgid "Sticker Text"
+msgstr ""
+
+#: reconstruction.php:3171
+msgid "Price"
+msgstr ""
+
+#: reconstruction.php:3172
+msgid "Items"
+msgstr ""
+
+#: reconstruction.php:3173
+msgid "Button Text"
+msgstr ""
+
+#: reconstruction.php:3174
+msgid "Button Link"
+msgstr ""
+
+#: reconstruction.php:3196
+msgid "BT Our Office"
+msgstr ""
+
+#: reconstruction.php:3197
+msgid "About Our Office."
+msgstr ""
+
+#: reconstruction.php:3244
+msgid "About"
+msgstr ""
+
+#: reconstruction.php:3247 reconstruction.php:3295 reconstruction.php:3350
+#: reconstruction.php:3440 reconstruction.php:3511 reconstruction.php:3601
+#: reconstruction.php:3738
+msgid "Title:"
+msgstr ""
+
+#: reconstruction.php:3271
+msgid "BT Gallery"
+msgstr ""
+
+#: reconstruction.php:3272
+msgid "Gallery widget."
+msgstr ""
+
+#: reconstruction.php:3291
+msgid "Gallery"
+msgstr ""
+
+#: reconstruction.php:3299
+msgid "List of image IDs (comma-separated):"
+msgstr ""
+
+#: reconstruction.php:3324
+msgid "BT Text Image"
+msgstr ""
+
+#: reconstruction.php:3325
+msgid "Text with image."
+msgstr ""
+
+#: reconstruction.php:3354
+msgid "Image IDs:"
+msgstr ""
+
+#: reconstruction.php:3358
+msgid "Text:"
+msgstr ""
+
+#: reconstruction.php:3384
+msgid "BT Recent Posts"
+msgstr ""
+
+#: reconstruction.php:3385
+msgid "Recent posts with thumbnails."
+msgstr ""
+
+#: reconstruction.php:3436
+msgid "Recent Posts"
+msgstr ""
+
+#: reconstruction.php:3444
+msgid "Number of posts:"
+msgstr ""
+
+#: reconstruction.php:3470
+msgid "BT Recent Comments"
+msgstr ""
+
+#: reconstruction.php:3471
+msgid "Recent comments with avatars."
+msgstr ""
+
+#: reconstruction.php:3497
+msgid "by"
+msgstr ""
+
+#: reconstruction.php:3507
+msgid "Recent Comments"
+msgstr ""
+
+#: reconstruction.php:3515
+msgid "Number of comments:"
+msgstr ""
+
+#: reconstruction.php:3540
+msgid "BT Instagram"
+msgstr ""
+
+#: reconstruction.php:3541
+msgid "Instagram photos."
+msgstr ""
+
+#: reconstruction.php:3594
+msgid "Instagram"
+msgstr ""
+
+#: reconstruction.php:3605
+msgid "Number of photos:"
+msgstr ""
+
+#: reconstruction.php:3609
+msgid "User ID:"
+msgstr ""
+
+#: reconstruction.php:3613
+msgid "Client ID:"
+msgstr ""
+
+#: reconstruction.php:3617 reconstruction.php:3762
+msgid "Access token:"
+msgstr ""
+
+#: reconstruction.php:3645
+msgid "BT Twitter"
+msgstr ""
+
+#: reconstruction.php:3646
+msgid "Twitter feed."
+msgstr ""
+
+#: reconstruction.php:3728
+msgid "Twitter"
+msgstr ""
+
+#: reconstruction.php:3742
+msgid "Number of tweets:"
+msgstr ""
+
+#: reconstruction.php:3746
+msgid "Username:"
+msgstr ""
+
+#: reconstruction.php:3750
+msgid "Cache (minutes):"
+msgstr ""
+
+#: reconstruction.php:3754
+msgid "Consumer key:"
+msgstr ""
+
+#: reconstruction.php:3758
+msgid "Consumer secret:"
+msgstr ""
+
+#: reconstruction.php:3766
+msgid "Access token secret:"
+msgstr ""
+
+#: reconstruction.php:3821
+msgid "Portfolio Item"
+msgstr ""
+
+#: reconstruction.php:3830
+msgid "Portfolio Categories"
+msgstr ""

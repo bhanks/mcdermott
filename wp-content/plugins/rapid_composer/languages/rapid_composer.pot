@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR bitorbit
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-20 20:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: rapid_composer.php:95 rapid_composer.php:111
+msgid "Rapid Composer Settings"
+msgstr ""
+
+#: rapid_composer.php:95 rapid_composer.php:294
+msgid "Rapid Composer"
+msgstr ""
+
+#: rapid_composer.php:117
+msgid "Show shortcode tag instead of mapped name"
+msgstr ""
+
+#: rapid_composer.php:118
+msgid "Show shortcode tags instead of mapped names"
+msgstr ""
+
+#: rapid_composer.php:119
+msgid "No"
+msgstr ""
+
+#: rapid_composer.php:120
+msgid "Yes"
+msgstr ""
+
+#: rapid_composer.php:124 rapid_composer.php:125
+msgid "Post Types"
+msgstr ""
+
+#: rapid_composer.php:145 rapid_composer.php:204 rapid_composer.php:375
+msgid "Save"
+msgstr ""
+
+#: rapid_composer.php:183
+msgid "Toggle"
+msgstr ""
+
+#: rapid_composer.php:184
+msgid "Add"
+msgstr ""
+
+#: rapid_composer.php:185
+msgid "Edit"
+msgstr ""
+
+#: rapid_composer.php:186
+msgid "Edit Content"
+msgstr ""
+
+#: rapid_composer.php:187
+msgid "Clone"
+msgstr ""
+
+#: rapid_composer.php:188
+msgid "Delete"
+msgstr ""
+
+#: rapid_composer.php:189
+msgid "Layout error!"
+msgstr ""
+
+#: rapid_composer.php:190
+msgid "Add Element"
+msgstr ""
+
+#: rapid_composer.php:191
+msgid "Select Layout"
+msgstr ""
+
+#: rapid_composer.php:192
+msgid "Select"
+msgstr ""
+
+#: rapid_composer.php:193 rapid_composer.php:360
+msgid "Submit"
+msgstr ""
+
+#: rapid_composer.php:194
+msgid "Copy"
+msgstr ""
+
+#: rapid_composer.php:195
+msgid "Copy +"
+msgstr ""
+
+#: rapid_composer.php:196 rapid_composer.php:368
+msgid "Paste"
+msgstr ""
+
+#: rapid_composer.php:197
+msgid "Export"
+msgstr ""
+
+#: rapid_composer.php:198
+msgid "Import"
+msgstr ""
+
+#: rapid_composer.php:199
+msgid "Not allowed!"
+msgstr ""
+
+#: rapid_composer.php:200
+msgid "Manage Clipboard"
+msgstr ""
+
+#: rapid_composer.php:201
+msgid "Filter..."
+msgstr ""
+
+#: rapid_composer.php:202 rapid_composer.php:372
+msgid "Shortcode Mapper"
+msgstr ""
+
+#: rapid_composer.php:203
+msgid "Insert Mapping"
+msgstr ""
+
+#: rapid_composer.php:365
+msgid "Undo"
+msgstr ""
+
+#: rapid_composer.php:366
+msgid "Redo"
+msgstr ""
+
+#: rapid_composer.php:370
+msgid "Clipboard Manager"
+msgstr ""
+
+#: rapid_composer.php:374
+msgid "Preview"
+msgstr ""

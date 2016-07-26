@@ -1,0 +1,47 @@
+
+/* General */
+
+/*html.hasGhost .pageWrap {
+    content: 'viewport-units-buggyfill; height: 100vh;';
+}
+
+html.hasGhost.removeGhost .pageWrap {
+    height: auto;
+    content: 'viewport-units-buggyfill; height: auto;';
+}*/
+
+.variableImg {
+	content: 'viewport-units-buggyfill; height: 100vh;';
+}
+
+.boldSection.fullScreen .port {
+    content: 'viewport-units-buggyfill; height: 100vh;';
+}
+
+/*.pageWrap {
+    content: 'viewport-units-buggyfill; min-height: 100vh;';
+}*/
+
+.boldSection.fullScreen, .fullScreen {
+    content: 'viewport-units-buggyfill; height: 100vh;';
+}
+
+.slidedVariable .slidedItem.firstItem, .slidedVariable .slidedItem.firstItem .port {
+    content: 'viewport-units-buggyfill; width: 100vw;';
+}
+
+/* Slider heights */
+
+.boldSection .port.wSlider .smallSliderHeight .slidedItem .port {
+    content: 'viewport-units-buggyfill; height: 36vh;';
+}
+
+.boldSection .port.wSlider .mediumSliderHeight .slidedItem .port {
+    content: 'viewport-units-buggyfill; height: 60vh;';
+}
+
+.boldSection .port.wSlider .largeSliderHeight .slidedItem .port {
+    content: 'viewport-units-buggyfill; height: 100vh;';
+}
+
+
