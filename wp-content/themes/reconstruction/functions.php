@@ -752,7 +752,7 @@ if ( ! class_exists( 'BoldThemesTheme' ) ) {
 					'slug'               => 'reconstruction', // The plugin slug (typically the folder name).
 					'source'             => get_template_directory() . '/plugins/reconstruction.zip', // The plugin source.
 					'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-					'version'            => '1.0.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+					'version'            => '1.0.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
 					'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 					'force_deactivation' => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 					'external_url'       => '', // If set, overrides default API URL and points to an external URL.

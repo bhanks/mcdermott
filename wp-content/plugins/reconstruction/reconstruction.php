@@ -3,7 +3,7 @@
 /**
  * Plugin Name: ReConstruction Plugin
  * Description: Shortcodes and widgets by BoldThemes.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: BoldThemes
  * Author URI: http://bold-themes.com
  */
@@ -1073,11 +1073,14 @@ class bt_accordion {
 	}
 
 	static function handle_shortcode( $atts, $content ) {
+		extract( shortcode_atts( array(
+				'open_first' => '',
+		), $atts, 'bt_accordion' ) );
 	
 		$content = do_shortcode( $content );
 		$content = explode( '%$%', $content );	
 
-		$output = '<div class="btTabs tabsVertical">';
+		$output = '<div class="btTabs tabsVertical" data-open-first="' . $open_first . '">';
 			$output .= '<ul class="tabsHeader">';
 				for ( $i = 0; $i < count( $content ); $i = $i + 2 ) {
 					$output .= wptexturize( $content[ $i ] );
@@ -1165,7 +1168,7 @@ class bt_service {
 		
 		$output = '<div class="servicesItem ' . $el_class . '"' . $style_attr . '>';
 			$output .= '<div class="sIcon">';
-				if ( $url == '' ) $url != '#';
+				if ( $url == '' ) $url = '#';
 				$output .= '<div class="ico ' . $icon_type . '"><a href="' . $url . '" data-ico' . $fa . '="&#x' . $icon . ';"></a></div>';
 			$output .= '</div>';
 			$output .= '<div class="sTxt">';
@@ -1185,12 +1188,8 @@ class bt_gmaps {
 
 	static function handle_shortcode( $atts ) {
 	
-		wp_enqueue_script( 
-			'gmaps_api',
-			'https://maps.googleapis.com/maps/api/js?v=&sensor=false'
-		);	
-	
 		extract( shortcode_atts( array(
+			'api_key'   => '',
 			'latitude'  => '',
 			'longitude' => '',
 			'zoom'      => '',
@@ -1199,12 +1198,17 @@ class bt_gmaps {
 			'el_class'  => ''
 		), $atts, 'bt_gmaps' ) );
 		
-		$latitude = sanitize_text_field( $latitude );
-		$longitude = sanitize_text_field( $longitude );
-		$zoom = sanitize_text_field( $zoom );
-		$height = sanitize_text_field( $height );
-		$el_style = sanitize_text_field( $el_style );
-		$el_class = sanitize_text_field( $el_class );
+		if ( $api_key != '' ) {
+			wp_enqueue_script( 
+				'gmaps_api',
+				'https://maps.googleapis.com/maps/api/js?key=' . $api_key
+			);
+		} else {
+			wp_enqueue_script( 
+				'gmaps_api',
+				'https://maps.googleapis.com/maps/api/js?v=&sensor=false'
+			);
+		}
 		
 		if ( $zoom == '' ) $zoom = 14;
 		if ( $height == '' ) $height = '250px';
@@ -2834,7 +2838,7 @@ function bt_map_sc() {
 			'params' => array( 
 				array( 'param_name' => 'headline', 'type' => 'textfield', 'heading' => __( 'Headline', 'bt_plugin' ), 'preview' => true ),
 				array( 'param_name' => 'image', 'type' => 'attach_image', 'heading' => __( 'Image', 'bt_plugin' ), 'preview' => true ),
-				array( 'param_name' => 'text', 'type' => 'textfield', 'heading' => __( 'Text', 'bt_plugin' ), 'preview' => true ),
+				array( 'param_name' => 'text', 'type' => 'textarea', 'heading' => __( 'Text', 'bt_plugin' ), 'preview' => true ),
 				array( 'param_name' => 'name', 'type' => 'textfield', 'heading' => __( 'Name', 'bt_plugin' ), 'preview' => true ),
 				array( 'param_name' => 'job', 'type' => 'textfield', 'heading' => __( 'Job', 'bt_plugin' ), 'preview' => true )
 			) )
@@ -2848,7 +2852,14 @@ function bt_map_sc() {
 			) )
 		);
 		
-		bt_rc_map( 'bt_accordion', array( 'name' => __( 'Accordion', 'bt_plugin' ), 'description' => __( 'Accordion container', 'bt_plugin' ), 'container' => 'vertical', 'accept' => array( 'bt_accordion_items' => true ), 'show_settings_on_create' => false ));
+		bt_rc_map( 'bt_accordion', array( 'name' => __( 'Accordion', 'bt_plugin' ), 'description' => __( 'Accordion container', 'bt_plugin' ), 'container' => 'vertical', 'accept' => array( 'bt_accordion_items' => true ), 'show_settings_on_create' => false, 'params' => array(
+				array( 'param_name' => 'open_first', 'type' => 'dropdown', 'heading' => __( 'Open first item initially', 'bt_plugin' ),
+					'value' => array(
+						__( 'No', 'bt_plugin' ) => 'no',
+						__( 'Yes', 'bt_plugin' ) => 'yes'
+				) )
+			) )
+		);
 		
 		bt_rc_map( 'bt_accordion_items', array( 'name' => __( 'Accordion Item', 'bt_plugin' ), 'description' => __( 'Single accordion element', 'bt_plugin' ), 'accept' => array( '_content' => true ), 'container' => 'vertical', 'params' => array(
 				array( 'param_name' => 'headline', 'type' => 'textfield', 'heading' => __( 'Headline', 'bt_plugin' ), 'preview' => true )
@@ -2881,6 +2892,7 @@ function bt_map_sc() {
 		
 		bt_rc_map( 'bt_gmaps', array( 'name' => __( 'Google Maps', 'bt_plugin' ), 'description' => __( 'Google Maps with marker on specified coordinates', 'bt_plugin' ),
 			'params' => array(
+				array( 'param_name' => 'api_key', 'type' => 'textfield', 'heading' => __( 'API key', 'bt_plugin' ) ),
 				array( 'param_name' => 'latitude', 'type' => 'textfield', 'heading' => __( 'Latitude', 'bt_plugin' ) ),
 				array( 'param_name' => 'longitude', 'type' => 'textfield', 'heading' => __( 'Longitude', 'bt_plugin' ) ),
 				array( 'param_name' => 'zoom', 'type' => 'textfield', 'heading' => __( 'Zoom (e.g. 14)', 'bt_plugin' ) ),
@@ -3504,6 +3516,8 @@ if ( ! class_exists( 'BT_Instagram' ) ) {
 	// INSTAGRAM	
 	
 	class BT_Instagram extends WP_Widget {
+		
+		private $feed_id;
 	
 		function __construct() {
 			parent::__construct(
@@ -3516,55 +3530,50 @@ if ( ! class_exists( 'BT_Instagram' ) ) {
 		public function widget( $args, $instance ) {
 
 			wp_enqueue_script( 'bt_instagram', plugin_dir_url( __FILE__ ) . 'instafeed.min.js', array(), '', true );
-			
+
 			$number = intval( trim( $instance['number'] ) );
 			if ( $number < 1 ) {
 				$number = 4;
 			} else if ( $number > 30 ) {
 				$number = 30;
-			}			
+			}
+			
+			$instance['tag'] = isset( $instance['tag'] ) ? $instance['tag'] : '';
+			$instance['access_token'] = isset( $instance['access_token'] ) ? $instance['access_token'] : '';
+			
+			$this->feed_id = uniqid( 'instafeed' );
 			
 			$this->number = $number;
 			$this->user_id = trim( $instance['user_id'] );
+			$this->tag = trim( $instance['tag'] );
 			$this->client_id = trim( $instance['client_id'] );
 			$this->access_token = trim( $instance['access_token'] );
 			
-			if ( $this->number == '' || $this->user_id == '' || $this->client_id == '' || $this->access_token == '' ) {
+			// if ( $this->number == '' || $this->user_id == '' || $this->client_id == '' ) {
+			if ( $this->access_token == '' || $this->client_id == '' ) {
 				return;
 			}
 
-			add_action( 'wp_footer', array( $this, 'init_feed' ) );
-		
 			echo $args['before_widget'];
 			if ( ! empty( $instance['title'] ) ) {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
 			}
 			
-			echo '<div id="instafeed" class="instaGrid"></div>';
-				
+			echo '<div class="btInstaWrap">';
+			echo '<div id="' . $this->feed_id . '" class="btInstaGrid instaGrid"></div>';
+			echo '</div>';				
 			echo $args['after_widget'];
+			
+			$proxy = new BT_Instagram_Proxy( $this->feed_id, $this->number, $this->user_id, $this->tag, $this->client_id, $this->access_token );
+			add_action( 'wp_footer', array( $proxy, 'js' ) );
 		}
-		
-		public function init_feed() {
-			echo '<script type="text/javascript">
-				jQuery( document ).ready(function() {
-					var feed = new Instafeed({
-						get: "user",
-						limit: ' . esc_js( $this->number ) . ',
-						template: \'<span><a href="{{link}}"><img src="{{image}}" /></a></span>\',
-						userId: ' . esc_js( $this->user_id ) . ',
-						clientId: "' . esc_js( $this->client_id ) . '",
-						accessToken: "' . esc_js( $this->access_token ) . '"
-					});
-					feed.run();
-				});
-			</script>';		
-		}
+	
 		
 		public function form( $instance ) {
 			$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Instagram', 'bt_plugin' );
 			$number = ! empty( $instance['number'] ) ? $instance['number'] : '4';
 			$user_id = ! empty( $instance['user_id'] ) ? $instance['user_id'] : '';
+			$tag = ! empty( $instance['tag'] ) ? $instance['tag'] : '';
 			$client_id = ! empty( $instance['client_id'] ) ? $instance['client_id'] : '';
 			$access_token = ! empty( $instance['access_token'] ) ? $instance['access_token'] : '';
 			?>
@@ -3576,9 +3585,13 @@ if ( ! class_exists( 'BT_Instagram' ) ) {
 				<label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of photos:', 'bt_plugin' ); ?></label> 
 				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>">			
 			</p>
-			<p>
+			<!--p>
 				<label for="<?php echo esc_attr( $this->get_field_id( 'user_id' ) ); ?>"><?php _e( 'User ID:', 'bt_plugin' ); ?></label> 
 				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'user_id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'user_id' ) ); ?>" type="text" value="<?php echo esc_attr( $user_id ); ?>">			
+			</p-->
+			<p>
+				<label for="<?php echo esc_attr( $this->get_field_id( 'tag' ) ); ?>"><?php _e( 'Hashtag:', 'bt_plugin' ); ?></label> 
+				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'tag' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'tag' ) ); ?>" type="text" value="<?php echo esc_attr( $tag ); ?>">			
 			</p>
 			<p>
 				<label for="<?php echo esc_attr( $this->get_field_id( 'client_id' ) ); ?>"><?php _e( 'Client ID:', 'bt_plugin' ); ?></label> 
@@ -3596,12 +3609,41 @@ if ( ! class_exists( 'BT_Instagram' ) ) {
 			$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 			$instance['number'] = ( ! empty( $new_instance['number'] ) ) ? strip_tags( $new_instance['number'] ) : '';
 			$instance['user_id'] = ( ! empty( $new_instance['user_id'] ) ) ? strip_tags( $new_instance['user_id'] ) : '';
+			$instance['tag'] = ( ! empty( $new_instance['tag'] ) ) ? strip_tags( $new_instance['tag'] ) : '';
 			$instance['client_id'] = ( ! empty( $new_instance['client_id'] ) ) ? strip_tags( $new_instance['client_id'] ) : '';
 			$instance['access_token'] = ( ! empty( $new_instance['access_token'] ) ) ? strip_tags( $new_instance['access_token'] ) : '';
-
+			
 			return $instance;
 		}
 	}
+	
+	class BT_Instagram_Proxy {
+		function __construct( $feed_id, $number, $user_id, $tag, $client_id, $access_token ) {
+			$this->feed_id = $feed_id;
+			$this->number = $number;
+			$this->user_id = $user_id;
+			$this->tag = $tag;
+			$this->client_id = $client_id;
+			$this->access_token = $access_token;
+		}
+		public function js() { ?>
+			<script>
+				jQuery( document ).ready(function() {
+					var feed = new Instafeed({
+						get: 'tagged',
+						tagName: '<?php echo $this->tag; ?>',
+						target: '<?php echo $this->feed_id; ?>', 
+						limit: '<?php echo $this->number; ?>',
+						template: '<span><a href="{{link}}"><img src="{{image}}" /></a></span>',
+						clientId: '<?php echo $this->client_id; ?>',
+						accessToken: '<?php echo $this->access_token; ?>'
+					});
+					feed.run();
+				});
+			</script>
+		<?php }
+	}	
+	
 }
 
 if ( ! class_exists( 'BT_Twitter' ) ) {
